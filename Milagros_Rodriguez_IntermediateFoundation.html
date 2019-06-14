@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+ function sigma(num){
+   var sum = 0;
+   for (var i = 0; i <= num; i++) {
+       sum += i;
+       } 
+    return sum;
+}
+
+function factorial(num) {
+    var sum = 1;
+    for (var i = 1; i <= num; i++) {
+        sum *= i;
+        }
+        return sum;
+}
+
+function fibonacci(num){
+   if (num === 1){
+     return 1;
+   } else if (num === 2){
+     return 2;
+   } else {
+     var num1 = fibonacci (num-1);
+     var num2 = fibonacci (num-2);
+     return num1+num2;
+   }
+ }
+
+ function secondToLast(arr){
+    var Carr = [42, "Hi You!", 4, "Liam", 7]
+    if (arr.length<2){
+        return "null";
+    } else{
+        return arr[arr.length-2];
+    }
+}
+
+function secondlargest(arr){
+    var max=arr[0];
+    var i=arr.length-1;
+    for (var i=0; i<arr.length; i++){
+        if (arr[i]> arr[i]){
+            var temp=arr[i];
+            arr[i]=arr[i];
+            arr[i]=temp;
+            }
+    }
+   return arr[arr.length-2];
+   return arr;
+ }
+
+ unction doubleTrouble(arr){
+    var Farr = [4, "Ulysses", 42, false]
+    var newdub=[];
+    for(let i=0;i<=arr.length-1;i++){
+        newdub.push(arr[i]);
+        newdub.push(arr[i]);
+        }
+        return newdub;
+}
+
+
+        </script>
+    </body>
+
+</html>
